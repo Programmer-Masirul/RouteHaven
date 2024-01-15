@@ -1,0 +1,17 @@
+.video-modal-area{
+    
+    .section-title{
+        gap: 202px;
+        margin-bottom: 34px;
+        @include rmaxwd(992){
+            gap: 60px;
+        }
+        @include rmaxwd(767){
+            gap: 30px;
+            flex-direction: column;
+        }
+        .btn-sec-inner{
+            margin-top: -12px;
+        }
+    }
+}

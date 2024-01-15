@@ -1,0 +1,17 @@
+.location-area{
+    &.style-2{
+       position: relative;
+       .bg-bottom-shape{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       }
+       .sec-btn{
+        margin-top: 56px;
+            @include sm{
+                margin-top: 23px;
+            }
+       }
+    }
+}

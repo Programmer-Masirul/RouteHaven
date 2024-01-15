@@ -1,0 +1,10 @@
+.brand-slider-area{
+    position: relative;
+}
+.brand-slider-wrapper{
+    display: flex;
+    justify-content: space-between;
+    // @include rmaxwd(992){
+    //     margin-top: 57px;
+    // }
+}

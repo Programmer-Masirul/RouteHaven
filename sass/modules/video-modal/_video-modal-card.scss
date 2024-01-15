@@ -1,0 +1,34 @@
+.video-modal-card{
+    position: relative;
+    overflow: hidden;
+    .image-wrapper{
+        border-radius: 24px;
+        padding: 12px;
+        background-color: $white;
+        overflow: hidden;
+        padding-bottom: 0;
+        img{
+            border-radius: 24px;
+            flex-shrink: 0; 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include sm{
+            padding: 0px;
+            border-radius: 12px;
+            img{
+                border-radius: 12px;
+            }
+        }
+    }
+    &.style-2{
+        height: 608px !important;
+        @include rmaxwd(767){
+            height: 500px !important;
+        }
+        .image-wrapper{
+            height: 100%;
+        }
+    }
+}

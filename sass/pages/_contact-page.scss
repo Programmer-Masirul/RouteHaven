@@ -1,0 +1,78 @@
+.contact-info-area {
+
+}
+
+// contact-page
+.contact-title {
+    text-align: center;
+    h2 {
+        font-size: 48px;
+        color: $secondary-color;
+        margin-bottom: 0;
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            font-size: 48px;
+        }
+        @include md {
+            font-size: 38px;
+            line-height: 44px;
+        }
+        @include sm {
+            font-size: 32px;
+            line-height: 30px;
+        }
+    }
+}
+
+//Contact Form
+.contact-form-area{
+    background-color: $black-3;
+   
+    .comment-respond{
+        margin-top: 0px;
+        margin-left: 24px;
+        padding: 40px;
+        @include rmaxwd(1024){
+            margin-left: 0px;
+        }    
+    }
+    .video-modal-card {
+        height: 100%;
+        .image-wrapper{
+            padding: 0px !important;
+            width: 100%;
+            border-radius: 16px;
+            height: 100%;
+            img{
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.contact-form-btn-wrapper{
+    p{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .wpcf7-spinner{
+            background-color: transparent !important;
+            width: 32px;
+            height: 32px;
+            border: 4px solid $black;
+            border-top: 4px dotted $primary-color;
+            border-bottom: 4px dotted $primary-color;
+            // border-bottom-color: $secondary-color;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: loadingRotation 1s linear infinite;
+            &:before{
+                display: none !important;
+                background-color: transparent !important;
+            }
+        }
+    }
+}
